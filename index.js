@@ -1,4 +1,4 @@
-//  Call Method -
+//                                             - Call Method -
 
 // let obj = {
 //   firstName: "Kushal",
@@ -16,7 +16,7 @@
 
 // printName.call(obj2, "Hey ", ", All good!");
 
-// Apply method -
+//                                            - Apply method -
 
 // let obj = {
 //     firstName: "Kushal",
@@ -34,7 +34,7 @@
 
 //   printName.apply(obj2, ["Hey ", ", All good!"]);                       //       pass argument inside array
 
-// Bind method -
+//                                            - Bind method -
 
 // let obj = {
 //   firstName: "Kushal",
@@ -54,7 +54,7 @@
 // let functionValue2 = printName.bind(obj2, "Hey ", ", All good!");         // It returns the copy of function
 // functionValue2();
 
-// Polyfill for Bind method -
+//                                            - Polyfill for Bind method -
 
 // let obj = {
 //   firstName: "Kushal",
@@ -77,3 +77,34 @@
 
 // let functionValue2 = printName.myBind(obj, "hii ", ", All fine.");
 // functionValue2("10");
+
+
+//                                            - Currying - 
+
+// function add(a){                                 // With the help of closer
+//     return function(b){
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+
+// let res = add(1)(2)(3);
+// console.log(res);
+
+
+//                                           - Closure -                                           
+  
+// function outerFunction() {
+//   var outerVariable = 'Hello';
+
+//   function innerFunction() {
+//     console.log(outerVariable);
+//   }
+
+//   return innerFunction;
+// }
+
+// var closureExample = outerFunction();
+// closureExample(); // Output: Hello
+
